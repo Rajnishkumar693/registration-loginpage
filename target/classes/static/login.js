@@ -22,21 +22,11 @@ document
 
     const result = await response.text();
 
-<<<<<<< HEAD
-if(result === "Login Successful"){
-    alert(result);
-    window.location.href = "/dashboard.html";
-}
-else{
-    alert("Invalid Email or Password");
-}
-=======
     if(response.ok){
         alert(result);
         window.location.href = "/dashboard.html";
     }else{
         alert(result);
     }
->>>>>>> b98c8e799be2a6fd296d237cdc6a2f3ccb747567
 
 });
